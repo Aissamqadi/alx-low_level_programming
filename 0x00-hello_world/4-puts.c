@@ -1,6 +1,7 @@
-#include<stdio.h>
-
+/**
+ * puts - this is my description
+ */
+void puts(void)
 {
-int puts(""Programming is like building a multilingual puzzle");
-return 0;
+  puts("""Programming is like building a multilingual puzzle");
 }
