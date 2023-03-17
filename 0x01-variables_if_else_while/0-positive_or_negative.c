@@ -7,15 +7,20 @@
 */
 int main(void)
 {
-  int n;
-  srand(time(0));
-  n = rand() - RAND_MAX / 2;
-  /* Intializes random number generator */
-  if (n > 0)
-    printf("The number is positive/n");
-      if (n < 0)
-	printf("The number is negative\n");
-	  if (n==0)
-	    printf("The number is 0\n");
-  return 0;
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n > 0)
+{
+printf("%d  is positive/n", n);
+}
+else  if (n < 0)
+{
+printf("%d is negative\n", n);
+}
+else
+{
+printf("%d  is 0\n", n);
+}
+return 0;
 }
