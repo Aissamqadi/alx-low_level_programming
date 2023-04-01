@@ -8,25 +8,18 @@
  */
 char *leet(char *n)
 {
-char *encoded = malloc(strlen(n) + 1);
 int i, j;
-char leet_chars[5] = "aeotl";
-char leet_nums[5] = "43071";
-for (i = 0; n[i]; i++)
+char leet_chars[10] = "aAeEoOtTlL";
+char leet_nums[10] = "4433007711";
+for (i = 0; n[i] != '\0' ; i++)
 {
-for (j = 0; j < 5; j++)
+for (j = 0; j < 10; j++)
 {
-if (n[i] == leet_chars[j] || n[i] == leet_nums[j] - 'a' + 'A')
+if (n[i] == leet_chars[j])
 {
-encoded[i] = leet_nums[j];
-break;
-}
-else
-{
-encoded[i] = n[i];
+n[i] = leet_nums[j];
 }
 }
 }
-encoded[i] = '\0';
-return (encoded);
+return (n);
 }
