@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - program that prints its name, followed by a new line
  * @argc: argument that counts argument input
@@ -8,11 +7,10 @@
  */
 int main(int argc, char *argv[])
 {
-int i;
-for (i = 0; i < argc; i++)
+if (argc)
 {
-printf("%s\n", argv[i]);
+printf("%d\n", argc - 1);
+(void)argv;
 }
 return (0);
 }
-
