@@ -13,7 +13,7 @@ int len1 = (s1 == NULL) ? 0 : strlen(s1);
 int len2 = (s2 == NULL) ? 0 : strlen(s2);
 char *new_str = malloc((len1 + len2 + 1) * sizeof(char));
 if (new_str == NULL)
-return NULL;
+return (NULL);
 if (s1 != NULL)
 strcpy(new_str, s1);
 if (s2 != NULL)
