@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 /**
  * _strdup - Entry point
@@ -18,3 +19,4 @@ if (new_str == NULL)
 return (NULL);
 strcpy(new_str, str);
 return (new_str);
+}
