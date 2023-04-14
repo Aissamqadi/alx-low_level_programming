@@ -18,7 +18,9 @@ return (NULL);
 arr = malloc(array_size * sizeof(int));
 if (!arr)
 return (NULL);
-for (i = 0; array_size; i++)
+for (i = 0; i < array_size; i++)
+{
 arr[i] = min + i;
+}
 return (arr);
 }
