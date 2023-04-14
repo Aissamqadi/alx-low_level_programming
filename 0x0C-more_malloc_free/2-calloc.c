@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include "main.h"
 
@@ -16,6 +16,6 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-memset(ptr, 0, nmemb * size)
+memset(ptr, 0, nmemb * size);
 return (ptr);
 }
