@@ -25,7 +25,7 @@ s2 = "";
 }
 len1 = strlen(s1);
 len2 = strlen(s2);
-size = len1 + ((n < (unsigned int)len2) ? n : (unsigned int)len2) + 1;
+size = len1 + ((n < (unsigned int)len2) ? n : (unsigned int)len2) +1;
 result = malloc(size);
 if (result == NULL)
 {
