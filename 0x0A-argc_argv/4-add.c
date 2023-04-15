@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - program to multiply two numbers
@@ -9,7 +10,10 @@
 int main(int argc, char *argv[])
 {
 int sum = 0;
-while (--argc > 0) sum += atoi(*++argv);
+while (--argc > 0)
+{
+sum += atoi(*++argv);
+}
 printf("%d\n", sum);
-return 0;
+return (0);
 }
