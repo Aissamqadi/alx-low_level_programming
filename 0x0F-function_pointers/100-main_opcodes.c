@@ -10,20 +10,24 @@
  */
 int main(int argc, char *argv[])
 {
-char *p;
+int bytes, i;
+char *arr;
 if (argc != 2)
 {
 printf("Error\n");
 exit(1);
 }
-int bytes = atoi(argv[1]);
+bytes = atoi(argv[1]);
 if (bytes <= 0)
 {
 printf("Error\n");
 exit(2);
 }
-for (p = (char *)&main; p < (char *)&main + bytes; ++p)
-printf("%02hhx", *p);
+arr = malloc(bytes);
+for (i = 0; i < bytes; i++)
+{
+printf("%02hhx ", ((char *)main)[i]);
+}
 printf("\n");
 return (0);
 }
