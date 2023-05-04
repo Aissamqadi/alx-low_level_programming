@@ -9,14 +9,12 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
+unsigned long int xor = n ^ m;
 unsigned int count = 0;
-unsigned long int mask = 1UL;
-while (n || m)
+while (xor != 0)
 {
-if ((n & mask) != (m & mask))
-count++;
-n >>= 1;
-m >>= 1;
+count += xor & 1;
+xor >>= 1;
 }
 return (count);
 }
